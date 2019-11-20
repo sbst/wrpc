@@ -5,7 +5,7 @@ set (CMAKE_CXX_STANDARD 11)
 
 find_package(Boost 1.36.0 COMPONENTS python REQUIRED)
 
-file(GLOB Sources *.cpp)
+file(GLOB Sources *.cpp *.c)
 add_executable(${PROJECT_NAME} ${Sources})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
