@@ -1,7 +1,7 @@
-#include "FunctionsC.h"
+#include "wrpc.h"
 #include "Info.h"
 
-const char* GetValue(SInfo* pInfo)
+const char* GetValue(struct SInfo* pInfo)
 {
 	return pInfo->value;
 }

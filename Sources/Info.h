@@ -1,9 +1,9 @@
 #ifndef INFO_H
 #define INFO_H
 
-typedef struct
+struct SInfo
 {
 	const char* value;
-} SInfo;
+};
 
 #endif

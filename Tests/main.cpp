@@ -1,16 +1,13 @@
-#include <pch.h>
-#include "Info.h"
-#include "SetterGetter.h"
-
+#include <iostream>
 extern "C"
 {
-#include "FunctionsC.h"
+#include <wrpc.h>
 }
 
 
 int main()
 {
-	wrpc::CSetterGetter obj;
+	/*wrpc::CSetterGetter obj;
 	wrpc::CSetterGetter::Print(obj);
 
 	obj.SetId(100);
@@ -22,7 +19,7 @@ int main()
 	std::cout << "updated: " << std::endl;
 	wrpc::CSetterGetter::Print(obj);
 
-	std::cout << "get value: " << GetValue(obj.GetInfo().get()) << std::endl;
+	std::cout << "get value: " << GetValue(obj.GetInfo().get()) << std::endl;*/
 	std::cout << "get \"Hello\": " << GetHello() << std::endl;
 
 	return 0;

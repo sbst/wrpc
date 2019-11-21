@@ -1,10 +1,12 @@
 cmake_minimum_required(VERSION 2.8.11)
-project(wrpc)
+project(wrpc-tests)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set (CMAKE_CXX_STANDARD 11)
 
 file(GLOB Sources *.cpp *.c)
-add_library(${PROJECT_NAME} SHARED ${Sources})
+
+
+add_executable(${PROJECT_NAME} ${Sources})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
+target_link_libraries(${PROJECT_NAME} wrpc)
